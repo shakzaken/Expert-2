@@ -1,0 +1,13 @@
+
+    <p class="form-header">Add Category</p>
+     <form (ngSubmit)="submit()" class="category-form">
+        <div class="input-row">
+          <label for="name">Name</label>
+          <input type="text" id="name"  [(ngModel)]="category.name" name="categoryName">
+        </div>
+        <div class="name-error errors"></div>
+        <button type="submit" class="add-btn" >Save Category</button>
+      </form>
+
+
+

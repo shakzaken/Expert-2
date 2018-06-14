@@ -1,0 +1,109 @@
+
+
+
+  
+  
+  .orders-header{
+    font-size:40px;
+    font-weight: 300;
+    display: inline-block;
+    margin-left:20px;
+    align-self: center;
+    
+  }
+  
+  .header-container{
+    height:100px;
+    display: flex;
+  }
+  
+  .orders-icon{
+    color: var(--order-secondary);
+    font-size:80px;
+    margin-top: 10px;
+    cursor: pointer;  
+  }
+  
+  .orders-hr{
+    width:300px;
+    height:4px;
+    color:rgb(73, 175, 150);
+    background: rgb(73, 175, 150);
+    border:0;
+    text-align: left;
+  }
+  
+  .orders-row{
+    display: flex;
+    background: white;
+    margin: 20px 0;
+    line-height: 150%;
+    padding:10px;
+    width:90%;
+  }
+  
+  
+  .items-list{
+    width:350px;
+    margin-left:30px;
+    list-style: none;
+    align-self: center;
+  }
+  .calc-list{
+    width:120px;
+    margin-right:30px;
+    list-style: none;
+    align-self: center;
+  }
+
+  .name-list{
+      width:120px;
+  }
+  
+  .list-price{
+    width:50px;
+    font-size:20px;
+    font-weight: 500;
+    color:var(--order-primary);
+    align-self: center;
+  }
+  
+  .orders-footer{
+    display: flex;
+  }
+  
+  .bag-icon{
+    font-size:30px;
+    margin:20px;
+    color: var(--order-secondary);
+  }
+  
+  
+  .container-orders{
+    min-width: 800px;
+    width:60%;
+    margin: auto;
+  }
+  
+  .delete-icon{
+    color: var(--order-secondary);
+    align-self: start;
+    color:rgb(204, 226, 104);
+    font-weight: 500;
+    cursor: pointer;
+    font-size:25px;
+    margin-top:-6px;
+    
+  }
+
+
+  .orders-header{
+    font-size:30px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-left:38%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    width:140px;
+    
+}

@@ -1,0 +1,18 @@
+
+
+<div class="main-container">
+
+  <div class="left-container">
+    <app-admin-sidebar></app-admin-sidebar>
+  </div>
+    
+    <div class="right-container">
+      <app-admin-header></app-admin-header>
+      <div *ngIf="routeName=='book-form'"><app-book-form></app-book-form></div>
+      <div *ngIf="routeName=='category-form'"><app-category-form></app-category-form></div>
+      <div *ngIf="routeName=='categories-list'"><app-categories-list></app-categories-list></div>
+      <div *ngIf="routeName=='books-list'"><app-books-list></app-books-list></div>
+      <div *ngIf="routeName=='users-list'"><app-users-list></app-users-list></div>
+      <div *ngIf="routeName=='orders-list'"><app-orders-list></app-orders-list></div>
+  </div>
+</div>

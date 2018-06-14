@@ -1,0 +1,20 @@
+
+<nav class="navbar">
+  <a routerLink="/" class="navbar-logo">Expert</a>
+  <ul class="nav-list">
+    <li class="medium-link"><a routerLink='/admin'>Admin</a></li>
+    <li class="medium-link"><a routerLink='/cart'>my Cart</a></li>
+    <li class="long-link"><a routerLink='/orders'> my Orders</a></li>
+  </ul>
+  <ul *ngIf="!loggedIn()" class="nav-right nav-list">
+    <li class="small-link"><a routerLink='/login' >Login</a></li>
+    <li class="small-link"><a routerLink='/register'>Register</a></li>
+  </ul>
+  <ul *ngIf="loggedIn()" class="nav-right nav-list">
+    <li><a href="#">{{user.email}}</a></li>
+    <li class="small-link logout"><a href="#" (click)="logout()">Logout</a></li>
+  </ul>
+  
+</nav>
+
+

@@ -1,0 +1,13 @@
+commiting a project.
+-------------------------------------
+git add .
+git commit -m "the commit message"
+git push -u origin master
+or(git push ) alone...
+
+
+getting the projects 
+-----------------------------------
+git clone (full project)
+
+git pull (only changes).

@@ -1,0 +1,123 @@
+
+
+
+
+
+
+<section class="section-a">
+  <div class="container">
+      <h3 class="h3-header">Learn the newest Technologies and be an Expert</h3>
+      <div class="img-container">
+         <div class="card-icon">
+          <i class="fab fa-angular fa-5x icon angular-icon"></i>
+          <p class="card-text">Angular</p>
+         </div>
+            
+         <div class="card-icon">
+          <i class="fab fa-node fa-5x icon node-icon"></i>
+          <p class="card-text">Node Js</p>
+         </div>
+            
+          <div class="card-icon">
+            <i class="fab fa-react fa-5x icon react-icon"></i>
+            <p class="card-text">React</p>
+          </div> 
+          
+      </div>
+  </div>
+    
+</section>
+
+<section class="section-b">
+  <div class="container">
+    <h3 class="h3-header">
+      Buy our professional books and realize your dreams
+    </h3>
+    <div class="books-grid">
+      <div *ngFor="let b of UIbooks" class="book-card">
+          <img src="{{serverUrl}}books/images/{{b.pictureName}}" alt="">
+        <div class="book-card-body">
+          <h4>{{b.name}}</h4>
+        </div>
+        <div *ngIf="b.cartQuantity == 0" class="book-card-footer">
+            <a  class="card-link" (click)="addToCart(b)"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+        </div>
+        <div *ngIf="b.cartQuantity > 0" class="book-card-footer2">
+            <a routerLink="/" (click)="addToCart(b)"><i class="fas fa-plus-circle left-icon"></i></a> 
+            <p class="center-span">{{b.cartQuantity}}</p>
+            <a routerLink="/" (click)="decToCart(b)"><i class="fas fa-minus-circle right-icon"></i></a>  
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- /////////////////////   Old   ////////////////  -->
+
+
+
+
+
+<!--
+<nav>  
+    <div class="nav-wrapper grey lighten-3 list-container">
+      
+          <ul id="nav-mobile" class="hide-on-med-and-down" style="width:80%; margin:auto">
+              
+              <li *ngFor="let e of categoriesForView">
+                <a routerLink="/"  class="btn white" style="color:black; font-size:20px ; font-weight:400" (click)="filterCategory(e._id)">{{e.name}}</a>
+              </li>
+              <li>
+                  <a routerLink="/"  class="btn white" style="color:black; font-size:20px ; font-weight:400" (click)="unFilter()">All Categories</a>
+                </li>
+            </ul>
+    </div>
+</nav>
+-->
+
+
+
+
+
+<!--
+<div id="books-body" class="grey lighten-5">
+  <br><br>
+  <div *ngFor="let b of UIbooks; index as i" class="books-container">    
+    <div class="book-card">
+      <div class="card"  style="height:21rem; width:18rem">
+        <div class="card-image"  style="height:10rem; width:18rem">
+          <img [src]="b.pictureUrl"  style="height:10rem; width:18rem">
+          
+        </div>
+        <div class="card-content" style="height:6rem">
+          <p style="font-weight:400; font-size:16px">{{b.name}}</p>
+        </div>
+        <div *ngIf="b.cartQuantity == 0" class="card-action" >
+          <a routerLink="/" (click)="addToCart(b)">Add To Cart</a>
+        </div>
+        <div *ngIf="b.cartQuantity > 0" class="card-action yellow lighten-5" style="width:100%" >
+          <a  (click)="addToCart(b)" class="btn-floating btn waves-effect waves-light cyan lighten-3" style="margin-right:60px"><i  class="fa fa-plus"></i></a>
+
+          <span style="font-size:18px">{{b.cartQuantity}}</span>
+
+          <a  (click)="decToCart(b)" class="btn-floating btn waves-effect waves-light cyan lighten-3 right" ><i  class="fa fa-minus" ></i></a>
+        </div>
+        
+      </div>
+    </div>  
+  </div>
+</div>
+
+-->
+  
+ 
+

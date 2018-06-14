@@ -1,0 +1,66 @@
+
+
+
+  
+      <p class="form-header">Add Book</p>
+
+     <form class="book-form"  (ngSubmit)="submit()">
+        
+        <div class="input-row">
+          <label for="name">Name</label>
+          <input class="" type="text" id="name"
+          [(ngModel)]="book.name" name="name"> 
+        </div>
+        <div class="errors name-errors"></div>
+
+        <div class="input-row">
+          <label for="price">price</label>
+          <input type="number" id="price" [(ngModel)]="book.price" name="price">
+        </div>
+        <div class="errors price-errors"></div>
+
+        <div class="input-row">
+          <label for="quantity">quantity</label>
+          <input type="number" id="quantity" [(ngModel)]="book.quantity" name="quantity">
+        </div>
+        <div class="errors quantity-errors"></div>
+
+        <div class="input-row">
+          <label for="description">description</label>
+          <textarea id="description" class="" [(ngModel)]="book.description" name="description" ></textarea>
+        </div>
+        <div class="errors description-errors"></div>
+
+        <div class="input-row">
+          <label for="category">Category</label>
+          <select name="category" [(ngModel)]="book.category" id="">
+            <option selected value=""></option>
+            <option *ngFor="let c of categories" [value]="c._id">{{c.name}}</option>
+          </select>
+        </div>
+        <div class="errors category-errors"></div>
+      <div class="input-row-file">
+        <label class="img-label" for="image">Image</label>
+        <input class="custom-file-input" type="file" id ="image" name="myfile" #fileInput (change)="onLoadFile()">
+        <img class="book-img" src="assets/images/book-example.png" alt="">
+      </div>
+      <div class="errors img-errors"></div>
+        <button type="submit" class="add-btn">Save Book</button>
+    </form>
+
+
+
+
+
+    
+
+
+   
+
+
+    
+
+      
+
+
+

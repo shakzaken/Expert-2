@@ -1,0 +1,26 @@
+
+
+        
+          <h4 class="users-header">Users List</h4>
+      
+          <table class="table">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th class="big-width">Email</th>
+                <th class="small-width">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let u of users;let i = index">
+                <td>{{u.firstName}}</td>
+                <td>{{u.lastName}}</td>
+                <td>{{u.email}}</td>
+                <td (click)="deleteUser(u._id)">
+                  <i class="far fa-trash-alt delete-icon"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+   

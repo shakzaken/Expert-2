@@ -1,0 +1,53 @@
+
+
+
+<div class="register-form">
+  <form #f="ngForm" (ngSubmit)="submit()">
+      <div class="register-header">
+          <i class="fas fa-user-circle register-icon"></i>
+          <p>Register Form</p>
+      </div>
+      <div class="input-container">
+        <div class="input-line">
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text"  [(ngModel)]="user.firstName">
+        </div>
+          <div id="firstName-error"></div>
+      </div>
+      <div class="input-container">
+        <div class="input-line">
+            <label for="email">Last Name</label>
+            <input id="lastName" type="text" name="lastName" [(ngModel)]="user.lastName">
+        </div>
+          <div id="lastName-error"></div>
+      </div>
+      <div class="input-container">
+        <div class="input-line">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" [(ngModel)]="user.email">
+        </div>
+          <div id="email-error"></div>
+      </div>
+      <div class="input-container">
+        <div class="input-line">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" [(ngModel)]="user.password">
+        </div> 
+          <div id="password-error"></div>
+      </div>
+      <div class="input-container">
+        <div class="input-line">
+            <label for="password">Confirm Password</label>
+            <input id="confirmPassword" type="password" name="confirmPassword" [(ngModel)]="user.confirmPassword">
+        </div>
+          <div id="confirmPassword-error"></div>
+      </div>
+      <div class="input-container">
+          <button class="register-btn" type="submit" name="action">Register
+          </button>
+      </div>
+      <div class="register-footer">
+          <p>Expert</p>
+      </div>
+  </form>
+</div>

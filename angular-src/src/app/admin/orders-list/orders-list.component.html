@@ -1,0 +1,29 @@
+
+<section class="orders-section">
+  <div class="container-orders">
+        <h3 class="orders-header">Orders list</h3>
+     <ul class="orders-list">
+       <li *ngFor="let order of orders" class="orders-row">
+        <div class="name-list">
+            <p><strong>Name:</strong></p>
+           <p>{{order.user.firstName}} {{order.user.lastName}}</p>
+        </div>
+        <ul class="items-list">
+          <li *ngFor ="let item of order.items">
+            {{item.book.name}} &nbsp;<i class="fas fa-times fa-xs"></i>&nbsp; {{item.quantity}}
+          </li>
+        </ul>
+        <ul class="calc-list">
+           <li *ngFor ="let item of order.items">
+              {{item.book.price}}&nbsp;<i class="fas fa-times fa-xs"></i>&nbsp;{{item.quantity}} &nbsp;=&nbsp; ${{item.book.price*item.quantity}}
+           </li>
+         </ul>
+        <p class="list-price">${{calculate(order.items)}}</p>
+        <div class="delete-icon" (click)="deleteOrder(order._id)">
+           x
+        </div>
+      </li> 
+     </ul>
+  </div>
+</section>
+

@@ -1,0 +1,68 @@
+.table{
+    border: 1px solid rgb(146, 146, 146);
+    padding: 20px;
+    background: white;
+    margin-left:100px;
+}
+
+th{
+    width:60px;
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.big-width{
+    width:230px;
+}
+.small-width{
+    width:10px;
+}
+
+
+td{
+    padding: 5px;
+}
+
+
+
+.books-header{
+    font-size:30px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-left:38%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    width:140px;
+    
+}
+
+
+.delete-icon{
+    color:rgb(255, 174, 0);
+    margin-left:15px;
+    cursor: pointer;
+}
+
+
+
+
+.add-icon{
+    width:50px;
+    height:50px;
+    color:rgb(40, 241, 131);
+    cursor: pointer;
+}
+
+.add-icon:hover{
+    color:rgb(38, 196, 109);
+}
+
+
+.button-container{
+    margin-left:70%;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background: white;
+}
+

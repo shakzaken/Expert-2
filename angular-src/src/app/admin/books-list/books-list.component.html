@@ -1,0 +1,36 @@
+  
+  
+  <div class="button-container"> 
+   <a routerLink="/admin/book-form"><i class="fas fa-plus-circle add-icon"></i></a> 
+  </div> 
+  
+  <h4 class="books-header">Books List</h4>
+  <table class="table bordered striped">
+    <thead>
+      <tr>
+        <th class="small-width">Picture</th>
+        <th class="small-width">Name</th>
+        <th class="small-width">Category</th>
+        <th class="small-width">Price</th>
+        <th class="small-width">Quantity</th>
+        <th class="small-width">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let b of books ;let i = index">
+        <td><img *ngIf="b.pictureName"  src="{{serverUrl}}books/images/{{b.pictureName}}" alt=""  width="50px">
+          <img *ngIf="b.pictureUrl"  src="{{b.pictureUrl}}" alt=""  width="50px">
+        </td>
+        <td>{{b.name}}</td>
+        <td>{{b.category.name}}</td>
+        <td>{{b.quantity}}</td>
+        <td>{{b.price}}</td>
+        <td (click)="deleteBook(b._id)"><i class="far fa-trash-alt delete-icon"
+          ></i></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+

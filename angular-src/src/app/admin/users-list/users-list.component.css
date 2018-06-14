@@ -1,0 +1,44 @@
+.table{
+    border: 1px solid rgb(146, 146, 146);
+    padding: 20px;
+    background: white;
+    margin-left:100px;
+}
+
+th{
+    width:120px;
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.big-width{
+    width:230px;
+}
+.small-width{
+    width:60px;
+}
+
+
+td{
+    padding: 5px;
+}
+
+
+
+.users-header{
+    font-size:30px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-left:35%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    width:135px;
+    
+}
+
+
+.delete-icon{
+    color:rgb(255, 174, 0);
+    margin-left:15px;
+    cursor: pointer;
+}

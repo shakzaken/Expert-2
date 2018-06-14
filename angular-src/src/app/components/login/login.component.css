@@ -1,0 +1,95 @@
+
+
+.login-form{
+  width: 400px;
+  margin: 0 auto;
+  margin-top:100px;
+  border: 1px solid #e6e6e6;
+  
+}
+
+
+.login-footer{
+  background: linear-gradient(to right,#11998e, #38ef7d);
+  
+  height:60px;
+}
+
+.input-container{
+  padding :20px;
+  border: 1px solid #f4f4f4;
+  font-size: 20px;
+}
+
+.input-container input{
+  height:30px;
+  width:250px;
+  font-size:17px;
+  
+}
+.input-container input[type=email]{
+  margin-left:50px; 
+}
+.input-container input[type=password]{
+  margin-left:10px; 
+}
+
+.login-btn{
+  width:50%;
+  height:40px;
+  background:white ;
+  color: #0ceba8;
+  border: 1.5px solid #0ceba8; 
+  display: block;
+  font-size:20px;
+  cursor: pointer;
+}
+
+.login-btn:hover{
+  
+  background:#0ceba8 ;
+  color: white;
+  border: 1px solid #e6e6e6; 
+
+}
+
+.login-footer p{
+  text-align:center;
+  padding:20px;
+  color:white;
+}
+
+
+.login-header{
+  background: linear-gradient(to right,#11998e, #38ef7d);
+  height:110px;
+  display: flex;
+}
+
+.login-header p{
+  font-size:30px;
+  text-align: center;
+  color:white;
+  padding-top:20px;
+  align-self: center;
+  margin-left:10px;
+  margin-bottom: 20px;
+}
+
+.login-icon{
+  color:white;
+  width:50px;
+  height:50px;
+  align-self: center;
+  margin-left:75px;
+}
+
+
+.password-error, .email-error{
+
+  padding:10px 0;
+  font-size:16px;
+  color:red;
+  
+}
+

@@ -1,0 +1,35 @@
+
+
+<section class="cart-section">
+  <div class="container-cart">
+    <div class="header-container">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <h3 class="cart-header"> My cart</h3>
+    </div>
+     <hr class="cart-hr"> 
+      <br>
+
+     <ul class="cart-list">
+       <li *ngFor="let c of myCart" class="cart-row">
+         <img src="{{serverUrl}}books/images/{{c.pictureName}}" alt="">
+         <ul class="details-list">
+           <li><strong>Name:</strong>  &nbsp; {{c.name}}</li>
+           <li><strong>Price:</strong> &nbsp; ${{c.price}}</li>
+           <li><strong>Quantity:</strong> &nbsp;  {{c.cartQuantity}}</li>
+         </ul>
+         <p class="list-price">${{c.price*c.cartQuantity}}</p>
+         <div class="delete-icon" (click)="deleteItem(c.id)">
+          x
+        </div>
+       </li>
+     </ul>
+     <div class="cart-footer">
+        <p class="total">Total: &nbsp; ${{total}}</p>
+        <button (click)="buy()" class="pay-now">Buy Now!</button>
+      </div>
+  </div>
+  
+  
+</section>
+
+

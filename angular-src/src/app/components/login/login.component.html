@@ -1,0 +1,26 @@
+
+<div class="login-form">
+    <form #f="ngForm" (ngSubmit)="submit()">
+        <div class="login-header">
+            <i class="fas fa-user-circle login-icon"></i>
+            <p>Login Form</p>
+        </div>
+        <div class="input-container">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" [(ngModel)]="loginUser.email">
+            <div class="email-error"></div>
+        </div>
+        <div class="input-container">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" [(ngModel)]="loginUser.password">
+            <div class="password-error"></div>
+        </div>
+        <div class="input-container">
+            <button class="login-btn" type="submit" name="action">Login
+            </button>
+        </div>
+        <div class="login-footer">
+            <p>Expert</p>
+        </div>
+    </form>
+</div>

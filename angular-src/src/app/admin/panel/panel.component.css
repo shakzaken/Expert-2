@@ -1,0 +1,12 @@
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: 3fr 11fr;
+}
+
+.right-container{
+    background: #ececec;
+    padding: 50px;
+    padding-bottom: 100px;
+}

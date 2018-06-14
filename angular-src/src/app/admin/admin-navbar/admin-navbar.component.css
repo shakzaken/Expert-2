@@ -1,0 +1,52 @@
+
+.navbar{
+    
+    background: rgba(0, 0, 0, 0.85);
+    color:white;
+    height:60px;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(126, 126, 126);
+}
+
+.container{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.main-ul{
+    width:30%;
+}
+
+.main-ul li{
+    width: 140px;
+    align-self: center;
+}
+
+.main-ul a{  
+    font-size: 22px;
+    text-decoration: none;
+    color: white;  
+}
+
+
+.second-ul{
+    width:60%;
+}
+
+
+.second-ul li{
+    width: 70px;
+    align-self: center;
+}
+
+.second-ul a{  
+    text-decoration: none;
+    color: white;  
+}

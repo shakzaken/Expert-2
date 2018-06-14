@@ -1,0 +1,59 @@
+
+.sidebar{
+    background: rgba(0, 0, 0, 0.8);
+    color:white;
+    width:100%;
+    padding:20px;
+    height:100%;
+    font-size: 20px;
+    border-right: 2px solid rgb(126, 126, 126);
+    padding-bottom: 250px;
+
+}
+
+.sidebar ul{
+    list-style: none;
+}
+.list-item{
+    padding: 20px 10px;
+}
+
+.list-item a{
+    text-decoration: none;
+    color:white;
+}
+
+.list-item:hover{
+    text-decoration: none;
+    color:white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.main-ul{
+    margin-top: 20px;
+    padding: 20px 10px;
+    font-size:25px;   
+}
+
+.admin-icon{
+    height:70px;
+    width:70px;
+    margin-left:30px;
+    margin-bottom: 10px;
+
+}
+
+hr{
+    border:1px solid #f4f4f4;
+    background: #f4f4f4;
+    margin-bottom: 50px;
+    width:80%;
+    
+}
+
+.li-icon{
+    width:30px;
+    height:30px;
+    margin-right:10px;
+    padding-top:8px;
+}

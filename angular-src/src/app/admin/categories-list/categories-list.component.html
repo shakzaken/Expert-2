@@ -1,0 +1,24 @@
+
+<div class="button-container"> 
+  <a routerLink="/admin/category-form"><i class="fas fa-plus-circle add-icon"></i></a> 
+ </div>   
+<h4 class="categories-header">Categories Table</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Name</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of categories;let i = index">
+      <td>&nbsp; {{i+1}}</td>
+      <td>{{c.name}}</td>
+      <td (click)="deleteCategory(c._id)"> 
+          <i class="far fa-trash-alt delete-icon"></i> 
+      </td>
+    </tr>
+  </tbody>
+</table>
+  
