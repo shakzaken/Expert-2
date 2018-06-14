@@ -3,6 +3,9 @@
 General: 
 A website for managing a bookstore.
 
+Author:
+yakir zaken.
+
 Address:	
 http://shakapps.com
 
